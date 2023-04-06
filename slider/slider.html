@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: poppins, sans-serif;
+        overflow: hidden;
+      }
+      .banner1,
+      banner2,
+      banner3,
+      banner4 {
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+      img {
+        width: 120%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        animation: zoom-out 6s linear infinite;
+      }
+      @keyframes zoom-out {
+        100% {
+          width: 100%;
+        }
+      }
+      .text-box {
+        width: 600px;
+        position: absolute;
+        left: 100px;
+        top: 200px;
+        color: rgb(230, 198, 18);
+        animation: textup 20s linear infinite;
+        transform: translateY(200px);
+      }
+      .text-box h1 {
+        margin-bottom: 40px;
+      }
+      .text-box p {
+        font-size: 20px;
+        line-height: 18px;
+        margin-top: 70px;
+      }
+      .text-box span {
+        background-color: red;
+        height: 0.3rem;
+        width: 12rem;
+        position: absolute;
+        left: 0;
+      }
+      .banner1 {
+        animation: slide1 12s linear infinite;
+      }
+      .banner2 {
+        animation: slide2 12s linear infinite;
+      }
+      .banner3 {
+        animation: slide3 12s linear infinite;
+      }
+      .banner4 {
+        animation: slide4 12s linear infinite;
+      }
+      @keyframes slide1 {
+        0% {
+          visibility: visible;
+        }
+        25% {
+          visibility: hidden;
+        }
+        50% {
+          visibility: hidden;
+        }
+        75% {
+          visibility: hidden;
+        }
+        100% {
+          visibility: visible;
+        }
+      }
+      @keyframes slide2 {
+        0% {
+          visibility: hidden;
+        }
+        25% {
+          visibility: hidden;
+        }
+        50% {
+          visibility: visible;
+        }
+        75% {
+          visibility: hidden;
+        }
+        100% {
+          visibility: hidden;
+        }
+      }
+      @keyframes slide3 {
+        0% {
+          visibility: hidden;
+        }
+        25% {
+          visibility: hidden;
+        }
+        50% {
+          visibility: hidden;
+        }
+        75% {
+          visibility: visible;
+        }
+        100% {
+          visibility: hidden;
+        }
+      }
+      @keyframes slide4 {
+        0% {
+          visibility: hidden;
+        }
+        25% {
+          visibility: hidden;
+        }
+        50% {
+          visibility: hidden;
+        }
+        75% {
+          visibility: hidden;
+        }
+        100% {
+          visibility: visible;
+        }
+      }
+
+      @keyframes textup {
+        10% {
+          transform: translateY(0px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+      .text-box1 {
+        animation-delay: 0s;
+      }
+      .text-box2 {
+        animation-delay: 3s;
+      }
+      .text-box3 {
+        animation-delay: 6s;
+      }
+      .text-box4 {
+        animation-delay: 9s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner1">
+      <img src="img/w1.jpg" alt="" />
+      <div class="text-box text-box1">
+        <h1>Silence is not Enough</h1>
+        <span></span>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+          laborum modi adipisci eius tenetur voluptas quasi temporibus aliquid
+          sit repudiandae nihil autem facilis impedit, praesentium aspernatur
+          possimus fugit eos veniam!
+        </p>
+      </div>
+    </div>
+    <div class="banner2">
+      <img src="img/w2.jpg" alt="" />
+      <div class="text-box text-box2">
+        <h1>Future of Next Generation</h1>
+        <span></span>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+          laborum modi adipisci eius tenetur voluptas quasi temporibus aliquid
+          sit repudiandae nihil autem facilis impedit, praesentium aspernatur
+          possimus fugit eos veniam!
+        </p>
+      </div>
+    </div>
+    <div class="banner3">
+      <img src="img/w3.jpg" alt="" />
+      <div class="text-box text-box3">
+        <h1>Know your passion</h1>
+        <span></span>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+          laborum modi adipisci eius tenetur voluptas quasi temporibus aliquid
+          sit repudiandae nihil autem facilis impedit, praesentium aspernatur
+          possimus fugit eos veniam!
+        </p>
+      </div>
+    </div>
+    <div class="banner4">
+      <img src="img/pc.jpg" alt="" />
+      <div class="text-box text-box4">
+        <h1>Information Technology is the best way to move on</h1>
+        <span></span>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+          laborum modi adipisci eius tenetur voluptas quasi temporibus aliquid
+          sit repudiandae nihil autem facilis impedit, praesentium aspernatur
+          possimus fugit eos veniam!
+        </p>
+      </div>
+    </div>
+    <script src="java.js"></script>
+  </body>
+</html>
